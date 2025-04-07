@@ -27,7 +27,7 @@ const Navbar = ({openNav}:Props) => {
   
   return (
     <div 
-    className= {`transition-all ${ NavBg ? 'bg-white shadow-md':'fixed'} duration-200 h-[12vh] z-[100] w-full fixed`}>
+    className= {`transition-all ${ NavBg ? 'bg-white dark:bg-black shadow-md':'fixed'} duration-200 h-[12vh] z-[100] w-full fixed`}>
       <div className="flex items-center justify-between w-[90%] h-full mx-auto">
         {/* LOGO */}
         <Logo />
@@ -37,9 +37,9 @@ const Navbar = ({openNav}:Props) => {
               <Link
                 href={link.url}
                 key={link.id}
-                className="cursor-pointer text-gray-900 font-semibold hover:text-[#8490ff] transition-all duration-200 dark:hover:text-[#8490ff]"
+                className="cursor-pointer text-gray-900 dark:text-white font-semibold hover:text-[#8490ff] transition-all duration-200 dark:hover:text-[#8490ff]"
               >
-                <p>{link.label}</p>
+                {link.label}
               </Link>
             );
           })}
