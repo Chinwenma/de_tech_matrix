@@ -1,12 +1,28 @@
-import React from "react";
+"use client";
 import Logo from "../logo/Logo";
+import { useState, useEffect} from "react";
 import { navLinks } from "@/constants/constants";
 import Link from "next/link";
 import { FiDownloadCloud } from "react-icons/fi";
+import ThemeToggle from "../toggle/ThemeToggle";
+import { HiBars3BottomRight, } from "react-icons/hi2";
 
 const Navbar = () => {
+  const [NavBg, setNavbg] = useState(false);
+  useEffect(() => {
+ const handler = () => {
+      if (window.scrollY >= 90) setNavbg(true);
+        if (window.scrollY < 90) setNavbg(false);
+         
+    };
+    window.addEventListener("scroll", handler);
+    return () => window.removeEventListener("scroll", handler);
+
+  }, []);
+  
   return (
-    <div className="transition-all duration-200 h[12vh] z-[100] w-full fixed mt-2">
+    <div 
+    className= {`transition-all ${ NavBg ? 'bg-white dark:bg-black shadow-md': 'fixed'} duration-200 h-[12vh] z-[100] w-full fixed`}>
       <div className="flex items-center justify-between w-[90%] h-full mx-auto">
         {/* LOGO */}
         <Logo />
@@ -35,6 +51,8 @@ const Navbar = () => {
             <span className="relative z-20 text-sm flex items-center">
               <FiDownloadCloud className="mr-3 w-5 h-5"/> Download CV</span>
           </a>
+          <ThemeToggle />
+          <HiBars3BottomRight className=" w-8 h-8 cursor-pointer text-[#8490ff] lg:hidden"/>
         </div>
       </div>
     </div>
