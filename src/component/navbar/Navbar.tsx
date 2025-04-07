@@ -7,7 +7,12 @@ import { FiDownloadCloud } from "react-icons/fi";
 import ThemeToggle from "../toggle/ThemeToggle";
 import { HiBars3BottomRight, } from "react-icons/hi2";
 
-const Navbar = () => {
+
+type Props ={
+  openNav: () => void
+};
+
+const Navbar = ({openNav}:Props) => {
   const [NavBg, setNavbg] = useState(false);
   useEffect(() => {
  const handler = () => {
@@ -22,7 +27,7 @@ const Navbar = () => {
   
   return (
     <div 
-    className= {`transition-all ${ NavBg ? 'bg-white dark:bg-black shadow-md': 'fixed'} duration-200 h-[12vh] z-[100] w-full fixed`}>
+    className= {`transition-all ${ NavBg ? 'bg-white shadow-md':'fixed'} duration-200 h-[12vh] z-[100] w-full fixed`}>
       <div className="flex items-center justify-between w-[90%] h-full mx-auto">
         {/* LOGO */}
         <Logo />
@@ -32,7 +37,7 @@ const Navbar = () => {
               <Link
                 href={link.url}
                 key={link.id}
-                className="cursor-pointer text-gray-900 dark:text-white font-semibold hover:text-[#8490ff] transition-all duration-200 dark:hover:text-[#8490ff]"
+                className="cursor-pointer text-gray-900 font-semibold hover:text-[#8490ff] transition-all duration-200 dark:hover:text-[#8490ff]"
               >
                 <p>{link.label}</p>
               </Link>
@@ -42,7 +47,7 @@ const Navbar = () => {
         <div className="flex items-center space-x-4">
           <a
             href="/cv.pdf"
-            className="px-5 py-2.5 relative rounded group  text-white font-medium inline-block"
+            className=" hidden px-5 py-2.5 relative rounded group  text-white font-medium lg:inline-block"
           >
             <span className="absolute top-0 left-0 w-full h-full rounded opacity-50 filter blur-sm bg-gradient-to-br from-purple-600 to-blue-500"></span>
             <span className="h-full w-full inset-0 absolute mt-0.5 ml-0.5 bg-gradient-to-br filter group-active:opacity-0 rounded opacity-50 from-purple-600 to-blue-500"></span>
@@ -52,7 +57,7 @@ const Navbar = () => {
               <FiDownloadCloud className="mr-3 w-5 h-5"/> Download CV</span>
           </a>
           <ThemeToggle />
-          <HiBars3BottomRight className=" w-8 h-8 cursor-pointer text-[#8490ff] lg:hidden"/>
+          <HiBars3BottomRight onClick={openNav}className=" w-8 h-8 cursor-pointer text-[#8490ff] lg:hidden"/>
         </div>
       </div>
     </div>
