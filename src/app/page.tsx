@@ -1,10 +1,15 @@
-
+import ResponsiveNav from "@/component/navbar/ResponsiveNav";
+import React from "react";
 export default function Home() {
   return (
    
-   <div className="text-6xl">hello worl</div>
+   <div className="overflow-hidden">
+
+    <main>
+    </main>
+   </div>
   
   );
 }
-import React from "react";
+
 
