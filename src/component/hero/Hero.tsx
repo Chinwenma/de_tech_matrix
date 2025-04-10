@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
         {" "}
         <p className="text-sm mb-2">Hello,</p>{" "}
         <h1 className="text-4xl md:text-5xl font-bold mb-4">
-          I'm a Front-End Developer
+        {" I'm a Front-End Developer"} 
         </h1>{" "}
         <p className="mb-6">
           {" "}

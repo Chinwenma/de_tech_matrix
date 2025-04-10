@@ -10,7 +10,7 @@ const AboutSection = () => {
         {/* Image */}
         <div className="flex-1">
           <Image
-            src='/assets/matrix1.png'
+            src="/assets/matrix1.png"
             alt="Profile"
             className="rounded-full w-[50%] max-w-md mx-auto h-[60%]"
             priority
@@ -24,13 +24,13 @@ const AboutSection = () => {
           <h4 className="text-sm text-gray-600 mb-2 uppercase">About Me</h4>
           <h2 className="text-4xl font-bold mb-4">Chinwenma Okorie</h2>
           <p className="text-gray-600 leading-relaxed mb-6">
-            Hi, I'm a passionate Frontend Developer with a strong interest in
+            {"Hi, I'm a passionate "}Frontend Developer with a strong interest in
             building responsive, user-friendly websites and web applications. I
             enjoy turning complex problems into simple, beautiful, and intuitive
             designs. My tools of choice include HTML, CSS, JavaScript, and
-            modern libraries and frameworks like React. I'm constantly learning
+            modern libraries and frameworks like React.{"I'm constantly learning"} 
             and improving my skills to stay up-to-date with the latest web
-            technologies. Whether it's creating personal projects, contributing
+            technologies.{" Whether it's creating personal projects, contributing"}
             to open-source, or collaborating on real-world applications, I love
             bringing ideas to life in the browser.
           </p>
