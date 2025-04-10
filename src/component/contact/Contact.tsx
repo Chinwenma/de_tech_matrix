@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-      <section className="min-h-screen py-16">
+      <section className="min-h-screen py-16" id="contact">
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-4">Contact Me</h2>
           <p className="text-center mb-10 max-w-2xl mx-auto">
@@ -87,7 +87,7 @@ const Contact = () => {
                 <div className="sm:col-span-2 text-center">
                   <button
                     type="submit"
-                    className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded-lg transition"
+                    className="bg-[#8490ff] hover:bg-gradient-to-br from-purple-600 to-blue-500 transition-all duration-200 text-white font-semibold px-6 py-2 rounded shadow-2xl"
                   >
                     Send Message
                   </button>

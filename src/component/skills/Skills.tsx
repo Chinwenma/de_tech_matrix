@@ -2,10 +2,9 @@
 "use client";
 import React from "react";
 import { skillsData } from "../../constants/constants";
-
 const Skills = () => {
   return (
-    <section className="py-16 text-center">
+    <section className="py-16 text-center" id="skills">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold mb-4">My Services</h2>
         <p className="max-w-2xl mx-auto mb-12">

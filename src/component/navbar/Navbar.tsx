@@ -36,7 +36,7 @@ const Navbar = ({openNav}:Props) => {
               <Link
                 href={link.url}
                 key={link.id}
-                className="cursor-pointer font-semibold hover:text-[#cc84ff] transition-all duration-200 dark:hover:text-[#8490ff]"
+                className="cursor-pointer font-semibold hover:text-[#8490ff] transition-all duration-200 dark:hover:text-[#8490ff]"
               >
                 {link.label}
               </Link>

@@ -1,5 +1,5 @@
 import { FaLaptopCode, FaCameraRetro, FaPaintBrush,} from "react-icons/fa";
-
+import { RiAdvertisementLine } from "react-icons/ri";
 import { SkillType } from "../types/types";
 import { ProjectType } from "../types/types";
 
@@ -41,29 +41,29 @@ export const skillsData: SkillType[] = [
     id:1,
     title: "Web Development",
     description:
-      "If you are an entrepreneur, you know that your success cannot depend on the opinions of others. Like the wind, opinions.",
+      "I specialize in building modern, responsive, and high-performing websites. Whether it's a landing page, a business website, or a web application, I focus on clean code, scalability, and functionality to ensure an excellent user experience across all devices.",
     icon: FaLaptopCode,
   },
   {
     id: 2,
     title: "UI/UX Design",
     description:
-      "It is not because things are difficult that we do not dare; it is because we do not dare that they are difficult.",
+      "I craft intuitive and visually appealing interfaces that not only look great but also offer seamless navigation. From wireframes to final mockups, I focus on user behavior and design principles to create layouts that are both engaging and easy to use. My goal is to bridge the gap between design and development for a smooth user experience..",
     icon: FaPaintBrush,
   },
   {
     id:3,
     title: "Graphic Design",
     description:
-      "Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills.",
+      "I offer creative design solutions tailored to your brand, including logo design, social media graphics, flyers, posters, and more. Using tools like Canva and Adobe Express, I ensure each visual element communicates your message effectively while maintaining a consistent brand identity.",
     icon: FaCameraRetro,
   },
   {
     id:4,
     title: "Digital Marketing",
     description:
-      "more successful? Learn to love learning and growth. The more effort you put into improving your skills.",
-    icon: FaLaptopCode,
+      "I help businesses and personal brands grow their online presence through content creation, targeted social media campaigns, and visual storytelling. From developing content strategies to running ads, I combine creativity with data-driven techniques to connect with the right audience and drive engagement.",
+    icon: RiAdvertisementLine,
   },
 
 ];

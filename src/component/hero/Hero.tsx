@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Hero: React.FC = () => {
   return (
-    <section className=" container flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-20 pt-[12vh]">
+    <section className=" container flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-20 pt-[12vh]" id="#">
       {" "}
       <div className="md:w-1/2 mb-10 md:mb-0">
         {" "}

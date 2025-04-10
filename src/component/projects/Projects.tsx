@@ -7,6 +7,7 @@ import { ProjectType } from "../../types/types"; // Correct path to your types f
 // Project Component
 const Project = ({ project }: { project: ProjectType }) => {
   return (
+    <section id="projects">
     <div className=" rounded-2xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
       <Image
         src={project.image}
@@ -38,6 +39,7 @@ const Project = ({ project }: { project: ProjectType }) => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 

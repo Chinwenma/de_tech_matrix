@@ -43,7 +43,7 @@ const AboutSection = () => {
           <Image
             src="/assets/matrix2.png"
             alt="Profile"
-            className="rounded-full w-[50%] max-w-md mx-auto h-[60%]"
+            className="rounded-full w-[50%] max-w-md mx-auto h-[60%] "
             priority
             width={200}
             height={200}
@@ -52,7 +52,7 @@ const AboutSection = () => {
 
         {/* Text Content */}
         <div className="flex-1 text-center lg:text-left">
-          <h4 className="text-sm  mb-2 uppercase">About Me</h4>
+          <h4 className="text-sm  mb-2 uppercase text-[#8490ff]">About Me</h4>
           <h2 className="text-4xl font-bold mb-4 "> Chinwenma Okorie</h2>
           <p className=" leading-relaxed mb-6">
             {"Hi, I'm a passionate "}Frontend Developer with a strong interest in

@@ -3,8 +3,7 @@ import { navLinks } from "@/constants/constants"; // Your navLinks array
 import {
   FaFacebookF,
   FaTwitter,
-  FaSkype,
-  FaPinterestP,
+  FaGithub,
 } from "react-icons/fa";
 
 const Footer = () => {
@@ -34,11 +33,11 @@ const Footer = () => {
 
         {/* Social Icons */}
         <div className="flex gap-4 mb-6">
-          {[FaFacebookF, FaTwitter, FaSkype, FaPinterestP].map((Icon, idx) => (
+          {[FaFacebookF, FaTwitter, FaGithub ].map((Icon, idx) => (
             <Link
               key={idx}
               href="#"
-              className="w-10 h-10 bg-white text-gray-800 rounded-full flex items-center justify-center hover:bg-purple-500 hover:text-white transition"
+              className="w-10 h-10 bg-white text-gray-800 rounded-full flex items-center justify-center hover:bg-gradient-to-br from-purple-600 to-blue-500 transition-all duration-200 hover:text-white"
             >
               <Icon size={18} />
             </Link>
