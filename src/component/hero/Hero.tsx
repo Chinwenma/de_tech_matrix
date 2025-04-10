@@ -29,7 +29,7 @@ const Hero: React.FC = () => {
       <div className="md:w-1/2 flex justify-center">
         {" "}
         <Image
-          src="/assets/matrix2.png"
+          src="/assets/matrix1.png"
           alt="Developer Illustration"
           width={400}
           height={400}

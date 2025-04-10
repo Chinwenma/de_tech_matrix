@@ -1,5 +1,8 @@
-import { FaLaptopCode, FaCameraRetro, FaPaintBrush } from "react-icons/fa";
+import { FaLaptopCode, FaCameraRetro, FaPaintBrush, FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+
 import { SkillType } from "../types/types";
+import { ProjectType } from "../types/types";
+
 
 
 export const navLinks = [
@@ -13,15 +16,16 @@ export const navLinks = [
       url: "#about",
       label: "About",
     },
+   
     {
       id: 3,
-      url: "#projects",
-      label: "Projects",
+      url: "#skills",
+      label: "Skills",
     },
     {
       id: 4,
-      url: "#skills",
-      label: "Skills",
+      url: "#projects",
+      label: "Projects",
     },
     {
       id: 5,
@@ -30,10 +34,6 @@ export const navLinks = [
     },
  
   ];
- 
-
-
-
 
 export const skillsData: SkillType[] = [
 
@@ -67,3 +67,40 @@ export const skillsData: SkillType[] = [
   },
 
 ];
+
+export const projectData: ProjectType[] = [
+  {
+      id: 1,
+      title: "Travel and Tours Website",
+      description: "A wete built with Next.js and Tailwind CSS that lets users explore tour packages and book trips.",
+      image: "/assets/matrix1.png",
+      liveLink: "https://travelap.vercel.app",
+      githubLink: "https://github.com/username/travel-app",
+    },
+    {
+      id: 2,
+      title: "Online Booktore",
+      description: "An interactive bookstore application with cart, wishlist, and daily deals functionality.",
+      image: "/assets/matrix1.png",
+      liveLink: "https://bookore.vercel.app",
+      githubLink: "https://github.com/username/bokstore",
+    },
+    {
+      id: 3,
+      title: "Online Bstore",
+      description: "An iractive bookstore application with cart, wishlist, and daily deals functionality.",
+      image: "/assets/matrix1.png",
+      liveLink: "https://bstore.vercel.app",
+      githubLink: "https://github.com/username/bkstore",
+    },
+    {
+      id: 4,
+      title: "Onlinkstore",
+      description: "tive bookstore application with cart, wishlist, and daily deals functionality.",
+      image: "/assets/matrix1.png",
+      liveLink: "https://bostore.vercel.app",
+      githubLink: "https://github.com/username/boo",
+    },
+    // Add more projects as needed
+  ];
+

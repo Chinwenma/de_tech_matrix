@@ -3,7 +3,7 @@ import About from "@/component/about/About";
 // import Footer from "@/component/footer/Footer";
 import { Hero } from "@/component/hero/Hero";
 import ResponsiveNav from "@/component/navbar/ResponsiveNav";
-// import Projects from "@/component/projects/Projects";
+import Projects from "@/component/projects/Projects";
 import Skills from "@/component/skills/Skills";
 
 export default function Home() {
@@ -16,9 +16,10 @@ export default function Home() {
         <Hero />{" "}
         <About />
         <Skills />
+        <Projects />
         {/* 
        
-        <Projects />
+        
         <Contact /> */}
       </main>
       <footer>{/* <Footer /> */}</footer>

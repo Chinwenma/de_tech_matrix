@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const AboutSection = () => {
   return (
-    <section className="py-16">
+    <section className="py-16" id="about">
       <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-12">
         {/* Image */}
         <div className="flex-1">

@@ -14,10 +14,9 @@ const Skills = () => {
 
         <div className="grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 cursor-pointer">
           {skillsData.map((skill) => {
-            const Icon = skill.icon;
+            const Icon = skill.icon; 
             return (
               <div key={skill.id} className="p-6">
-                {/* Wrap both icon and title in a container for unified hover effect */}
                 <div className="hover:text-[#8490ff] transition-all duration-200 dark:hover:text-[#8490ff]">
                   <div className="flex justify-center mb-4 text-5xl text-primary">
                     <Icon className="transition-all duration-200" />
