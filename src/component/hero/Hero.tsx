@@ -20,16 +20,15 @@ const Hero: React.FC = () => {
         <a
           href="/docs/CV.pdf"
           download
-          className="px-6 py-3 rounded-full shadow  bg-[#8490ff] text-white hover:bg-gradient-to-br from-purple-600 to-blue-500 transition-all duration-200"
+          className="px-6 py-3  rounded shadow  bg-[#8490ff] text-white hover:bg-gradient-to-br from-purple-600 to-blue-500 transition-all duration-200"
         >
-          {" "}
-          Download CV{" "}
+          Download CV
         </a>{" "}
       </div>{" "}
       <div className="md:w-1/2 flex justify-center">
         {" "}
         <Image
-          src="/assets/matrix1.png"
+          src="/assets/matrix2.png"
           alt="Developer Illustration"
           width={400}
           height={400}

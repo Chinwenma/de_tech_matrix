@@ -7,7 +7,7 @@ import { ProjectType } from "../../types/types"; // Correct path to your types f
 // Project Component
 const Project = ({ project }: { project: ProjectType }) => {
   return (
-    <div className="bg-white rounded-2xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+    <div className=" rounded-2xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
       <Image
         src={project.image}
         alt={project.title}
@@ -17,7 +17,7 @@ const Project = ({ project }: { project: ProjectType }) => {
       />
       <div className="p-4">
         <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-        <p className="text-gray-600 mb-4">{project.description}</p>
+        <p className="mb-4">{project.description}</p>
         <div className="flex space-x-4">
           <a
             href={project.liveLink}
@@ -31,7 +31,7 @@ const Project = ({ project }: { project: ProjectType }) => {
             href={project.githubLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-800 hover:text-black flex items-center"
+            className=" hover:text-black flex items-center"
           >
             <FaGithub className="mr-1" /> GitHub
           </a>
@@ -44,7 +44,7 @@ const Project = ({ project }: { project: ProjectType }) => {
 // ProjectSection Component
 const ProjectSection: React.FC = () => {
   return (
-    <section id="projects" className="py-16 bg-gray-100">
+    <section id="projects" className="py-16">
       <div className="max-w-6xl mx-auto px-4 text-center">
         <h2 className="text-4xl font-bold mb-4">Projects</h2>
         <p className="text-gray-600 mb-12 max-w-2xl mx-auto">

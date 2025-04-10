@@ -1,6 +1,6 @@
 import About from "@/component/about/About";
-// import Contact from "@/component/contact/Contact";
-// import Footer from "@/component/footer/Footer";
+import Contact from "@/component/contact/Contact";
+import Footer from "@/component/footer/Footer";
 import { Hero } from "@/component/hero/Hero";
 import ResponsiveNav from "@/component/navbar/ResponsiveNav";
 import Projects from "@/component/projects/Projects";
@@ -13,16 +13,14 @@ export default function Home() {
         <ResponsiveNav />
       </header>
       <main>
-        <Hero />{" "}
-        <About />
+        <Hero /> <About />
         <Skills />
         <Projects />
-        {/* 
-       
-        
-        <Contact /> */}
+        <Contact />
       </main>
-      <footer>{/* <Footer /> */}</footer>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }
