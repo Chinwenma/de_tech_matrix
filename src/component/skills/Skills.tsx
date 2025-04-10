@@ -13,7 +13,7 @@ const Skills = () => {
         </p>
 
         <div className="grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 cursor-pointer">
-          {skillsData.map((skill: any) => {
+          {skillsData.map((skill) => {
             const Icon = skill.icon;
             return (
               <div key={skill.id} className="p-6">
