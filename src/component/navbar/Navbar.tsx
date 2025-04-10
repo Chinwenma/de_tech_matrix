@@ -26,7 +26,7 @@ const Navbar = ({openNav}:Props) => {
   
   return (
     <div 
-    className= {`transition-all ${ NavBg ? 'shadow-md':'fixed'} duration-200 h-[12vh] z-[100] w-full fixed`}>
+    className= {`transition-all ${ NavBg ? 'shadow-md bg-white dark:bg-[#140f1c]':'fixed bg-transparent'} duration-200 h-[12vh] z-[1000] w-full fixed `}>
       <div className="flex items-center justify-between w-[90%] h-full mx-auto">
         {/* LOGO */}
         <Logo />
