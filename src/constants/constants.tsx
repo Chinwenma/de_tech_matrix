@@ -1,4 +1,4 @@
-import { FaLaptopCode, FaCameraRetro, FaPaintBrush, FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { FaLaptopCode, FaCameraRetro, FaPaintBrush,} from "react-icons/fa";
 
 import { SkillType } from "../types/types";
 import { ProjectType } from "../types/types";
