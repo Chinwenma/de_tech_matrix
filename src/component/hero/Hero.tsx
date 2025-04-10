@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
       {" "}
       <div className="md:w-1/2 mb-10 md:mb-0">
         {" "}
-        <p className="text-sm mb-2">Hello,</p>{" "}
+        <p className="text-sm mb-2 text-[#8490ff]">Hello,</p>{" "}
         <h1 className="text-4xl md:text-5xl font-bold mb-4">
         {" I'm a Front-End Developer"} 
         </h1>{" "}
@@ -20,7 +20,7 @@ const Hero: React.FC = () => {
         <a
           href="/docs/CV.pdf"
           download
-          className="px-6 py-3 rounded-full shadow  bg-[#8490ff] hover:bg-gradient-to-br from-purple-600 to-blue-500 transition-all duration-200"
+          className="px-6 py-3 rounded-full shadow  bg-[#8490ff] text-white hover:bg-gradient-to-br from-purple-600 to-blue-500 transition-all duration-200"
         >
           {" "}
           Download CV{" "}

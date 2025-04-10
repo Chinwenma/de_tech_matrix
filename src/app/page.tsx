@@ -4,7 +4,7 @@ import About from "@/component/about/About";
 import { Hero } from "@/component/hero/Hero";
 import ResponsiveNav from "@/component/navbar/ResponsiveNav";
 // import Projects from "@/component/projects/Projects";
-// import Skills from "@/component/skills/Skills";
+import Skills from "@/component/skills/Skills";
 
 export default function Home() {
   return (
@@ -15,8 +15,9 @@ export default function Home() {
       <main>
         <Hero />{" "}
         <About />
-        {/* 
         <Skills />
+        {/* 
+       
         <Projects />
         <Contact /> */}
       </main>

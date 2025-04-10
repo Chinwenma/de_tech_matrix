@@ -21,9 +21,9 @@ const AboutSection = () => {
 
         {/* Text Content */}
         <div className="flex-1 text-center lg:text-left">
-          <h4 className="text-sm text-gray-600 mb-2 uppercase">About Me</h4>
+          <h4 className="text-sm  mb-2 uppercase">About Me</h4>
           <h2 className="text-4xl font-bold mb-4">Chinwenma Okorie</h2>
-          <p className="text-gray-600 leading-relaxed mb-6">
+          <p className=" leading-relaxed mb-6">
             {"Hi, I'm a passionate "}Frontend Developer with a strong interest in
             building responsive, user-friendly websites and web applications. I
             enjoy turning complex problems into simple, beautiful, and intuitive
