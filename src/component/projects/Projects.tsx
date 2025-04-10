@@ -49,7 +49,7 @@ const ProjectSection: React.FC = () => {
     <section id="projects" className="py-16">
       <div className="max-w-6xl mx-auto px-4 text-center">
         <h2 className="text-4xl font-bold mb-4">Projects</h2>
-        <p className="text-gray-600 mb-12 max-w-2xl mx-auto">
+        <p className="mb-12 max-w-2xl mx-auto">
           A selection of some recent works that showcase my skills in frontend development and UI design.
         </p>
         <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
