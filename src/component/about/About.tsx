@@ -36,7 +36,7 @@ const techStack = [
 ];
 const AboutSection = () => {
   return (
-    <section className="py-16" id="about">
+    <section className="py-16" id="about" data-aos="fade-up">
       <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-12">
         {/* Image */}
         <div className="flex-1">
@@ -71,7 +71,7 @@ const AboutSection = () => {
           </button> */}
         </div>
       </div>
-      <div className="max-w-6xl mx-auto px-4 text-center">
+      <div className="max-w-6xl mx-auto px-4 text-center" data-aos="zoom-in">
         <h2 className="text-3xl font-bold mb-6">Tech Stack</h2>
         <div className="flex flex-wrap justify-center items-center gap-6">
           {techStack.map((tech) => (

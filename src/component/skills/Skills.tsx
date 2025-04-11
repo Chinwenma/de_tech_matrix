@@ -8,10 +8,10 @@ const Skills = () => {
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold mb-4">My Services</h2>
         <p className="max-w-2xl mx-auto mb-12">
-          At about this time of year, some months after New Year’s resolutions have been made and kept, or made and neglected.
+        I offer a range of creative and technical services tailored to help individuals and businesses build a strong digital presence
         </p>
 
-        <div className="grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 cursor-pointer">
+        <div className="grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 cursor-pointer" data-aos="zoom-in">
           {skillsData.map((skill) => {
             const Icon = skill.icon; 
             return (

@@ -12,7 +12,8 @@
 
 # testing
 /coverage
-
+#bun
+bun.lock
 # next.js
 /.next/
 /out/

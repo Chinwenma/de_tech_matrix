@@ -8,7 +8,7 @@ import { ProjectType } from "../../types/types"; // Correct path to your types f
 const Project = ({ project }: { project: ProjectType }) => {
   return (
     <section id="projects">
-    <div className=" rounded-2xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+    <div className=" rounded-2xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105" data-aos="flip-left">
       <Image
         src={project.image}
         alt={project.title}

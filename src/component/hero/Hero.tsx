@@ -6,7 +6,7 @@ const Hero: React.FC = () => {
   return (
     <section className=" container flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-20 pt-[12vh]" id="#">
       {" "}
-      <div className="md:w-1/2 mb-10 md:mb-0">
+      <div className="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
         {" "}
         <p className="text-sm mb-2 text-[#8490ff]">Hello,</p>{" "}
         <h1 className="text-4xl md:text-5xl font-bold mb-4">
@@ -25,7 +25,9 @@ const Hero: React.FC = () => {
           Download CV
         </a>{" "}
       </div>{" "}
-      <div className="md:w-1/2 flex justify-center">
+      <div className="md:w-1/2 flex justify-center" data-aos="fade-left" data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="500">
         {" "}
         <Image
           src="/assets/matrix2.png"
