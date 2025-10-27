@@ -82,8 +82,8 @@ export const projectData: ProjectType[] = [
       title: "E-commerce Platform",
       description: "A full-featured e-commerce platform with product listings, shopping cart, and secure checkout, including user authentication and role-based access for admins and customers.",
       image: "/assets/real.png",
-      liveLink: "https://bookore.vercel.app",
-      githubLink: "https://github.com/username/bokstore",
+      liveLink: "https://matrix-shop-six.vercel.app/",
+      githubLink: "https://github.com/Chinwenma/MatrixEcomm",
     },
     {
       id: 3,

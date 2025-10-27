@@ -1,8 +1,6 @@
-// components/AboutSection.tsx
 "use client";
 import React from "react";
 import Image from "next/image";
-// components/TechStackBanner.tsx
 
 const techStack = [
   {
@@ -34,57 +32,46 @@ const techStack = [
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
   },
 ];
+
 const AboutSection = () => {
   return (
     <section className="py-16" id="about" data-aos="fade-up">
       <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-12">
         {/* Image */}
-        <div className="flex-1 flex justify-center items-center ">
+        <div className="flex-1 flex justify-center items-center">
           <Image
             src="/assets/matrix2.png"
             alt="Profile"
             width={2000}
             height={2000}
-            className="rounded-full object-cover object-top w-80 h-80  border-4 border-purple-500"
+            className="rounded-full object-cover object-top w-80 h-80 border-4 border-purple-500"
             priority
           />
         </div>
 
         {/* Text Content */}
         <div className="flex-1 text-center lg:text-left">
-          <h4 className="text-sm  mb-2 uppercase text-[#8490ff]">About Me</h4>
-          <h2 className="text-4xl font-bold mb-4 "> Chinwenma Okorie</h2>
-          <p className=" leading-relaxed mb-6 tracking-wider text-justify pr-6">
-            Hi, I'm a passionate <strong>Web Developer</strong> with a strong
+          <h4 className="text-sm mb-2 uppercase text-[#8490ff]">About Me</h4>
+          <h2 className="text-4xl font-bold mb-4">Chinwenma Okorie</h2>
+          <p className="leading-relaxed mb-6 tracking-wider text-justify pr-6">
+            Hi, I&apos;m a passionate <strong>Web Developer</strong> with a strong
             interest in creating responsive, user-friendly websites and web
             applications using modern technologies. I enjoy turning complex
             problems into simple, elegant, and intuitive digital experiences.
-            I'm constantly learning and evolving to stay current with the latest
-            trends in web development. Whether it’s building personal projects,
+            I&apos;m constantly learning and evolving to stay current with the latest
+            trends in web development. Whether it&apos;s building personal projects,
             contributing to open-source, or collaborating on real-world
             applications, I love bringing ideas to life on the web.
           </p>
-
-          {/* <button className="px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded shadow hover:opacity-90 transition-all">
-            View Full Details
-          </button> */}
         </div>
       </div>
+
       <div className="max-w-6xl mx-auto px-4 text-center" data-aos="zoom-in">
         <h2 className="text-3xl font-bold mb-6">Tech Stack</h2>
         <div className="flex flex-wrap justify-center items-center gap-6">
           {techStack.map((tech) => (
-            <div
-              key={tech.name}
-              className="w-16 h-16 relative"
-              title={tech.name}
-            >
-              <Image
-                src={tech.src}
-                alt={tech.name}
-                layout="fill"
-                objectFit="contain"
-              />
+            <div key={tech.name} className="w-16 h-16 relative" title={tech.name}>
+              <Image src={tech.src} alt={tech.name} layout="fill" objectFit="contain" />
             </div>
           ))}
         </div>
