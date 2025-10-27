@@ -2,40 +2,41 @@ import Image from "next/image";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa"; // Ensure you import these
 import { projectData } from "../../constants/constants";
 import { ProjectType } from "../../types/types"; // Correct path to your types file
+import Link from "next/link";
 
 
 // Project Component
 const Project = ({ project }: { project: ProjectType }) => {
   return (
     <section id="projects">
-    <div className=" rounded-2xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105" data-aos="flip-left">
+    <div className=" rounded-md shadow-lg overflow-hidden md:h-[74vh] transform transition duration-300" data-aos="flip-left">
       <Image
         src={project.image}
         alt={project.title}
         width={500}
         height={300}
-        className="w-full h-60 object-cover"
+        className="w-full h-60 object-cover hover:scale-105 transition-transform duration-300"
       />
-      <div className="p-4">
+      <div className="p-4 ">
         <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-        <p className="mb-4">{project.description}</p>
-        <div className="flex space-x-4">
-          <a
+        <p className="mb-4 text-justify leading-relaxed tracking-tight">{project.description}</p>
+        <div className="flex px-6 items-center justify-between ">
+          <Link
             href={project.liveLink}
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:text-blue-800 flex items-center"
           >
             <FaExternalLinkAlt className="mr-1" /> Live
-          </a>
-          <a
+          </Link>
+          <Link
             href={project.githubLink}
             target="_blank"
             rel="noopener noreferrer"
             className=" hover:text-black flex items-center"
           >
             <FaGithub className="mr-1" /> GitHub
-          </a>
+          </Link>
         </div>
       </div>
     </div>
