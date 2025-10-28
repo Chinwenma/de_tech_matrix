@@ -60,10 +60,10 @@ const ServicesSection: FC = () => {
                 {/* {skill.icon}{" "} */}
               </div>
             </div>
-            <h3 className="text-lg font-semibold my-2 text-center">
+            <h3 className="text-lg font-semibold my-2 text-center text-black">
               {skill.title}
             </h3>
-            <p className="text-sm text-gray-600 leading-normal tracking-tight text-justify">
+            <p className="text-sm text-gray-700 leading-normal tracking-tight text-justify">
               {skill.description}
             </p>
           </motion.div>
