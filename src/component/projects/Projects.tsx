@@ -15,14 +15,14 @@ const Project = ({ project }: { project: ProjectType }) => {
         alt={project.title}
         width={500}
         height={300}
-        className="w-full h-60 object-cover hover:scale-105 transition-transform duration-300"
+        className="w-full h-60 object-cover object-top hover:scale-105 transition-transform duration-300"
       />
       <div className="p-4 ">
         <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
         <p className="mb-4 text-justify leading-relaxed tracking-tight">{project.description}</p>
         <div className="flex px-6 items-center justify-between ">
           <Link
-            href={project.liveLink}
+            href={project.liveLink as string}
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:text-blue-800 flex items-center"

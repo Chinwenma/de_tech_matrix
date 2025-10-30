@@ -81,7 +81,7 @@ export const projectData: ProjectType[] = [
       id: 2,
       title: "E-commerce Platform",
       description: "A full-featured e-commerce platform with product listings, shopping cart, and secure checkout, including user authentication and role-based access for admins and customers.",
-      image: "/assets/real.png",
+      image: "/assets/matrix-shop.png",
       liveLink: "https://matrix-shop-psi.vercel.app/",
       githubLink: "https://github.com/Chinwenma/matrix-shop",
     },
@@ -90,7 +90,7 @@ export const projectData: ProjectType[] = [
       title: "Hospital Management Dashboard",
       description: "Developed a simplified hospital management dashboard to manage doctors and patients efficiently.Implemented authentication, CRUD functionalities, and a clean, responsive user interface for administrative operations",
       image: "/assets/real.png",
-      // liveLink: "https://bstore.vercel.app",
+      liveLink: "https://bstore.vercel.app",
       githubLink: "https://github.com/Chinwenma/admin-dashboard",
     },
     // {
