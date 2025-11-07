@@ -4,11 +4,11 @@ const Hero: React.FC = () => {
   return (
     <section
       id="hero"
-      className="container flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-20 pt-[12vh]"
+      className="container flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-4 pt-[12vh]"
     >
       {/* Text Content */}
       <div
-        className="md:w-1/2 mb-10 md:mb-0"
+        className="md:w-1/2"
         data-aos="fade-right"
       >
         <p className="text-sm mb-2 text-[#8490ff]">Hello,</p>
@@ -30,19 +30,19 @@ const Hero: React.FC = () => {
 
       {/* Image Section */}
       <div
-        className="md:w-1/2 flex justify-center bg-transparent"
+        className=" hidden md:w-1/2 md:flex justify-center bg-transparent"
         data-aos="fade-left"
         data-aos-anchor="#hero"
         data-aos-offset="400"
         data-aos-duration="600"
       >
         <Image
-          src="/assets/tiny.png"
+          src="/assets/matrix2.png"
           alt="Developer working on a laptop"
           width={400}
           height={400}
           priority
-          className="rounded-xl object-cover"
+          className=" rounded-xl object-cover"
         />
       </div>
     </section>

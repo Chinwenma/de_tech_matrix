@@ -35,7 +35,7 @@ const techStack = [
 
 const AboutSection = () => {
   return (
-    <section className="py-16" id="about" data-aos="fade-up">
+    <section className=" py-6 md:py-16" id="about" data-aos="fade-up">
       <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-12">
         {/* Image */}
         <div className="flex-1 flex justify-center items-center">
@@ -52,7 +52,7 @@ const AboutSection = () => {
         {/* Text Content */}
         <div className="flex-1 text-center lg:text-left">
           <h4 className="text-sm mb-2 uppercase text-[#8490ff]">About Me</h4>
-          <h2 className="text-4xl font-bold mb-4">Chinwenma Okorie</h2>
+          <h2 className="text-4xl font-bold mb-4 text-justify">Okorie Chinwe U.</h2>
           <p className="leading-relaxed mb-6 tracking-wider text-justify pr-6">
             Hi, I&apos;m a passionate <strong>Web Developer</strong> with a strong
             interest in creating responsive, user-friendly websites and web

@@ -45,7 +45,7 @@ const ServicesSection: FC = () => {
         I offer a range of creative and technical services tailored to help individuals and businesses build a strong digital presence
          </p>
       </motion.div>
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:px-18">
         {skillsData.map((skill, i) => (
           <motion.div
             key={i}

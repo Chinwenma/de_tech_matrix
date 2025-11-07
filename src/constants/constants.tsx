@@ -1,4 +1,4 @@
-import { FaLaptopCode, FaCameraRetro, FaPaintBrush,} from "react-icons/fa";
+import { FaLaptopCode, FaCameraRetro,} from "react-icons/fa";
 import { RiAdvertisementLine } from "react-icons/ri";
 import { SkillType } from "../types/types";
 import { ProjectType } from "../types/types";
@@ -44,25 +44,25 @@ export const skillsData: SkillType[] = [
       "I specialize in building modern, responsive, and high-performing websites. Whether it's a landing page, a business website, or a web application, I focus on clean code, scalability, and functionality to ensure an excellent user experience across all devices.",
     icon: FaLaptopCode,
   },
+  // {
+  //   id: 2,
+  //   title: "UI/UX Design",
+  //   description:
+  //     "I craft intuitive and visually appealing interfaces that not only look great but also offer seamless navigation. From wireframes to final mockups, I focus on user behavior and design principles to create layouts that are both engaging and easy to use. My goal is to bridge the gap between design and development for a smooth user experience..",
+  //   icon: FaPaintBrush,
+  // },
   {
-    id: 2,
-    title: "UI/UX Design",
+    id:2,
+    title: "Database Design & Integration",
     description:
-      "I craft intuitive and visually appealing interfaces that not only look great but also offer seamless navigation. From wireframes to final mockups, I focus on user behavior and design principles to create layouts that are both engaging and easy to use. My goal is to bridge the gap between design and development for a smooth user experience..",
-    icon: FaPaintBrush,
-  },
-  {
-    id:3,
-    title: "Graphic Design",
-    description:
-      "I offer creative design solutions tailored to your brand, including logo design, social media graphics, flyers, posters, and more. Using tools like Canva and Adobe Express, I ensure each visual element communicates your message effectively while maintaining a consistent brand identity.",
+      "I build and integrate scalable databases, ensuring efficient data storage, security, and retrieval. My goal is to create data-driven web applications that handle complex functionalities while maintaining performance and reliability",
     icon: FaCameraRetro,
   },
   {
-    id:4,
-    title: "Digital Marketing",
+    id:3,
+    title: "API Integration & Optimization",
     description:
-      "I help businesses and personal brands grow their online presence through content creation, targeted social media campaigns, and visual storytelling. From developing content strategies to running ads, I combine creativity with data-driven techniques to connect with the right audience and drive engagement.",
+      "I integrate third-party APIs and services to extend the functionality of web applications—such as payment gateways, authentication systems, and external data sources. I also focus on optimizing API performance to ensure seamless and secure communication between frontend and backend systems.",
     icon: RiAdvertisementLine,
   },
 
@@ -87,11 +87,11 @@ export const projectData: ProjectType[] = [
     },
     {
       id: 3,
-      title: "Hospital Management Dashboard",
-      description: "Developed a simplified hospital management dashboard to manage doctors and patients efficiently.Implemented authentication, CRUD functionalities, and a clean, responsive user interface for administrative operations",
-      image: "/assets/real.png",
-      liveLink: "https://bstore.vercel.app",
-      githubLink: "https://github.com/Chinwenma/admin-dashboard",
+      title: "Diocesan Community Website",
+      description: "Contributed to building a comprehensive website with a MongoDB database, implementing features such as event management, news updates,and resource sharing",
+      image: "/assets/katsina.png",
+      liveLink: "https://catholicdioceseofkatsina.org/",
+      githubLink: "https://github.com/verbumnetworks/Kastina",
     },
     // {
     //   id: 4,
