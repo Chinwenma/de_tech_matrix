@@ -7,17 +7,14 @@ const Hero: React.FC = () => {
       className="container flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-4 pt-[12vh]"
     >
       {/* Text Content */}
-      <div
-        className="md:w-1/2"
-        data-aos="fade-right"
-      >
+      <div className="md:w-1/2" data-aos="fade-right">
         <p className="text-sm mb-2 text-[#8490ff]">Hello,</p>
         <h1 className="text-4xl md:text-5xl font-bold mb-4">
           I&apos;m a Web Developer
         </h1>
-        <p className="mb-6 text-gray-700 leading-relaxed">
-          I specialize in creating responsive and dynamic web applications
-          using modern technologies.
+        <p className="mb-6 leading-relaxed">
+          I specialize in creating responsive and dynamic web applications using
+          modern technologies.
         </p>
         <a
           href="/CV.pdf"
@@ -37,12 +34,12 @@ const Hero: React.FC = () => {
         data-aos-duration="600"
       >
         <Image
-          src="/assets/matrix2.png"
+          src="/assets/matrix1.png"
           alt="Developer working on a laptop"
-          width={400}
-          height={400}
-          priority
-          className=" rounded-xl object-cover"
+          width={800}
+          height={800}
+          loading="lazy"
+          className=" rounded-xl object-cover w-10/12"
         />
       </div>
     </section>

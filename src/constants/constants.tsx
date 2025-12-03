@@ -71,11 +71,11 @@ export const skillsData: SkillType[] = [
 export const projectData: ProjectType[] = [
   {
       id: 1,
-      title: "Real Estate Website",
-      description: "A responsive real estate web app for browsing, listing, and managing properties, featuring user authentication, dashboard management, and role-based access for agents and admins.",
-      image: "/assets/real.png",
-      liveLink: "https://matrix-real-estate.vercel.app/",
-      githubLink: "https://github.com/Chinwenma/MatrixRealEstate",
+      title: "Hospital Admin Dashboard",
+      description: "A responsive and user-friendly hospital management dashboard built with Next.js and TypeScript. The system allows administrators to easily manage patients, departments, and doctors using full CRUD functionality.",
+      image: "/assets/dashboard.png",
+      liveLink: "https://admin-dashboard-gold-phi.vercel.app/",
+      githubLink: "https://github.com/Chinwenma/admin-dashboard",
     },
     {
       id: 2,
