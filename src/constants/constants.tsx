@@ -73,8 +73,8 @@ export const projectData: ProjectType[] = [
       id: 1,
       title: "Hospital Admin Dashboard",
       description: "A responsive and user-friendly hospital management dashboard built with Next.js and TypeScript. The system allows administrators to easily manage patients, departments, and doctors using full CRUD functionality.",
-      image: "/assets/dashboard.png",
-      liveLink: "https://admin-dashboard-gold-phi.vercel.app/",
+      image: "/assets/dash.png",
+      // liveLink: "https://admin-dashboard-gold-phi.vercel.app/",
       githubLink: "https://github.com/Chinwenma/admin-dashboard",
     },
     {
