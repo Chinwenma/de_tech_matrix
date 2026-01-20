@@ -1,46 +1,36 @@
-import Image from "next/image";
+import Link from "next/link";
+import React from "react";
 
 const Hero: React.FC = () => {
   return (
     <section
       id="hero"
-      className="container flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-4 pt-[12vh]"
+      className="container mx-auto px-6 md:px-16 pb-10 pt-36 "
     >
-      {/* Text Content */}
-      <div className="md:w-1/2" data-aos="fade-right">
-        <p className="text-sm mb-2 text-[#8490ff]">Hello,</p>
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">
+      <div
+        className="max-w-2xl mx-auto rounded-2xl border border-gray-200/60 bg-white/70 backdrop-blur-md p-10 md:p-12 text-center shadow-sm"
+        data-aos="fade-up"
+      >
+        <p className="text-xs uppercase tracking-widest text-[#8490ff] mb-3">
+          Hello
+        </p>
+
+        <h1 className="text-4xl md:text-5xl font-semibold tracking-tight mb-4">
           I&apos;m a Web Developer
         </h1>
-        <p className="mb-6 leading-relaxed">
+
+        <p className="text-gray-600 leading-relaxed mb-8">
           I specialize in creating responsive and dynamic web applications using
           modern technologies.
         </p>
-        <a
+
+        <Link
           href="/CV.pdf"
           download
-          className="inline-block px-6 py-3 rounded shadow bg-[#8490ff] text-white hover:bg-gradient-to-br from-purple-600 to-blue-500 transition-all duration-300"
+          className="inline-flex items-center justify-center px-7 py-3 rounded-full bg-[#8490ff] text-white font-medium hover:bg-gradient-to-br from-purple-600 to-blue-500 transition-all duration-300"
         >
           Download CV
-        </a>
-      </div>
-
-      {/* Image Section */}
-      <div
-        className=" hidden md:w-1/2 md:flex justify-center bg-transparent"
-        data-aos="fade-left"
-        data-aos-anchor="#hero"
-        data-aos-offset="400"
-        data-aos-duration="600"
-      >
-        <Image
-          src="/assets/matrix1.png"
-          alt="Developer working on a laptop"
-          width={800}
-          height={800}
-          loading="lazy"
-          className=" rounded-xl object-cover w-10/12"
-        />
+        </Link>
       </div>
     </section>
   );
