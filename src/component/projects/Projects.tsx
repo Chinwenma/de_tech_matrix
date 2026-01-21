@@ -19,31 +19,31 @@ const Project = ({ project }: { project: ProjectType }) => {
           height={300}
           className="w-full h-60 object-cover object-top hover:scale-105 transition-transform duration-300"
         />
-        <div className="p-4 ">
+        <div className="p-4 backdrop-blur-md">
           <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-          <p className="mb-4 text-justify leading-relaxed tracking-tight">
+          <p className="mb-6 leading-relaxed text-sm">
             {project.description}
           </p>
-          <div className="flex px-6 items-center justify-between ">
-            {project.liveLink && (
-              <Link
-                href={project.liveLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:text-blue-800 flex items-center"
-              >
-                <FaExternalLinkAlt className="mr-1" /> Live
-              </Link>
-            )}
+         <div className="flex items-center justify-between mb-4">
+          {project.liveLink && (
             <Link
-              href={project.githubLink}
+              href={project.liveLink}
               target="_blank"
               rel="noopener noreferrer"
-              className=" hover:text-black flex items-center"
+              className="bg-[#8490ff] hover:bg-gradient-to-br from-purple-600 to-blue-500 text-white px-4 py-2 rounded-md flex items-center text-sm font-medium transition-colors"
             >
-              <FaGithub className="mr-1" /> GitHub
+              <FaExternalLinkAlt className="mr-2" /> Live Demo
             </Link>
-          </div>
+          )}
+          <Link
+            href={project.githubLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-gray-800 text-white px-4 py-2 rounded-md hover:bg-gray-900 flex items-center text-sm font-medium transition-colors"
+          >
+            <FaGithub className="mr-2" /> GitHub
+          </Link>
+        </div>
         </div>
       </div>
     </section>

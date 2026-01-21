@@ -53,7 +53,7 @@ const AboutSection = () => {
         <div className="flex-1 text-justify leading-relaxed tracking-wider" data-aos="fade-left">
           <h4 className="text-sm mb-2 uppercase text-[#8490ff]">About Me</h4>
           <h2 className="text-4xl font-bold mb-4 text-justify">Okorie Chinwe U.</h2>
-          <p className="leading-relaxed mb-6 tracking-wider text-justify">
+          <p className="leading-relaxed mb-6 md:pr-16 tracking-wider text-justify">
             Hi, I&apos;m a passionate <strong>Web Developer</strong> with a strong
             interest in creating responsive, user-friendly websites and web
             applications using modern technologies. I enjoy turning complex

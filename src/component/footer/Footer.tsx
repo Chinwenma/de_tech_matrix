@@ -1,10 +1,13 @@
 import Link from "next/link";
-import { navLinks } from "@/constants/constants"; // Your navLinks array
-import {
-  FaFacebookF,
-  FaTwitter,
-  FaGithub,
-} from "react-icons/fa";
+import { navLinks } from "@/constants/constants";
+import { FaFacebookF, FaGithub } from "react-icons/fa";
+import { FaX } from "react-icons/fa6";
+
+const socials = [
+  { icon: FaFacebookF, url: "https://facebook.com/okorie.chinwenma/" },
+  { icon: FaX, url: "https://x.com/Ethel_Omma" },
+  { icon: FaGithub, url: "https://github.com/Chinwenma" },
+];
 
 const Footer = () => {
   return (
@@ -24,7 +27,10 @@ const Footer = () => {
         <ul className="flex gap-6 text-sm font-semibold uppercase mb-6">
           {navLinks.map((link) => (
             <li key={link.id}>
-              <Link href={link.url} className="hover:text-purple-400 transition">
+              <Link
+                href={link.url}
+                className="hover:text-purple-400 transition"
+              >
                 {link.label}
               </Link>
             </li>
@@ -33,22 +39,34 @@ const Footer = () => {
 
         {/* Social Icons */}
         <div className="flex gap-4 mb-6">
-          {[FaFacebookF, FaTwitter, FaGithub ].map((Icon, idx) => (
-            <Link
-              key={idx}
-              href="#"
-              className="w-10 h-10 bg-white text-gray-800 rounded-full flex items-center justify-center hover:bg-gradient-to-br from-purple-600 to-blue-500 transition-all duration-200 hover:text-white"
-            >
-              <Icon size={18} />
-            </Link>
-          ))}
+          {socials.map((social, idx) => {
+            const Icon = social.icon;
+
+            return (
+              <Link
+                key={idx}
+                href={social.url}
+                target="_blank"
+                className="w-10 h-10 bg-white text-gray-800 rounded-full
+                           flex items-center justify-center
+                           hover:bg-gradient-to-br from-purple-600 to-blue-500
+                           transition-all duration-200 hover:text-white"
+              >
+                <Icon size={18} />
+              </Link>
+            );
+          })}
         </div>
 
         {/* Copyright */}
         <p className="text-sm text-center">
-          Copyright &copy;2025 All rights reserved | portfolio developed{" "}
-          <span className="text-purple-500">♥</span> by{" "}
-          <Link href="https://github.com/Chinwenma" target="_blank" className="text-purple-400 underline">
+          Copyright &copy; {new Date().getFullYear()} All rights reserved |
+          portfolio developed <span className="text-purple-500">♥</span> by{" "}
+          <Link
+            href="https://github.com/Chinwenma"
+            target="_blank"
+            className="text-purple-400 underline"
+          >
             DeTechMatrix
           </Link>
         </p>

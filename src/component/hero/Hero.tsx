@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
       className="container mx-auto px-6 md:px-16 pb-10 pt-36 "
     >
       <div
-        className="max-w-2xl mx-auto rounded-2xl border border-gray-200/60 bg-white/70 backdrop-blur-md p-10 md:p-12 text-center shadow-sm"
+        className="max-w-2xl mx-auto rounded-2xl border border-gray-200/60  backdrop-blur -md p-10 md:p-12 text-center shadow-sm mb-10"
         data-aos="fade-up"
       >
         <p className="text-xs uppercase tracking-widest text-[#8490ff] mb-3">
@@ -19,7 +19,7 @@ const Hero: React.FC = () => {
           I&apos;m a Web Developer
         </h1>
 
-        <p className="text-gray-600 leading-relaxed mb-8">
+        <p className="leading-relaxed mb-8">
           I specialize in creating responsive and dynamic web applications using
           modern technologies.
         </p>
