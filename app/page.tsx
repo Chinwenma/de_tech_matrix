@@ -1,14 +1,15 @@
 "use client";
 
-import About from "@/component/about/About";
-import Contact from "@/component/contact/Contact";
-import Footer from "@/component/footer/Footer";
-import { Hero } from "@/component/hero/Hero";
-import ResponsiveNav from "@/component/navbar/ResponsiveNav";
-import Projects from "@/component/projects/Projects";
-import Skills from "@/component/skills/Skills";
+import About from "./component/about/About";
+import Contact from "./component/contact/Contact";
+import Footer from "./component/footer/Footer";
+import Projects from "./component/projects/Projects";
+import Skills from "./component/skills/Skills";
+
 import { useEffect } from "react";
-import AOS from 'aos';       // Import AOS library
+import ResponsiveNav from "./component/navbar/ResponsiveNav";
+import { Hero } from "./component/hero/Hero";
+import AOS from "aos";
 
 
 export default function Home() {

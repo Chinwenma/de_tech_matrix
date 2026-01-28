@@ -1,10 +1,10 @@
 "use client";
 import Logo from "../logo/Logo";
 import { useState, useEffect} from "react";
-import { navLinks } from "@/constants/constants";
 import Link from "next/link";
 // import { FiDownloadCloud } from "react-icons/fi";
 import { HiBars3BottomRight, } from "react-icons/hi2";
+import { navLinks } from "@/app/constants/constants";
 
 
 type Props ={

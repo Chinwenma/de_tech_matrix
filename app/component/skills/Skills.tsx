@@ -1,7 +1,7 @@
 "use client";
 import { FC } from "react";
 import { motion } from "framer-motion";
-import { skillsData } from "@/constants/constants";
+import { skillsData } from "@/app/constants/constants";
 
 // import { Code2, AppWindow, Atom, ShieldCheck } from "lucide-react";
 // const services = [

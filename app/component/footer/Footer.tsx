@@ -1,5 +1,5 @@
+import { navLinks } from "@/app/constants/constants";
 import Link from "next/link";
-import { navLinks } from "@/constants/constants";
 import { FaFacebookF, FaGithub } from "react-icons/fa";
 import { FaX } from "react-icons/fa6";
 

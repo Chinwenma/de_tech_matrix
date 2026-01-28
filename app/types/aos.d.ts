@@ -1,7 +1,6 @@
 // /types/aos.d.ts
-
 declare module 'aos' {
-  interface AosOptions {
+  interface AOSOptions {
     duration?: number;
     easing?: string;
     once?: boolean;
@@ -9,7 +8,11 @@ declare module 'aos' {
     anchorPlacement?: string;
   }
 
-  export function init(options?: AosOptions): void;
-  export function refresh(): void;
-  export function refreshHard(): void;
+  const AOS: {
+    init(options?: AOSOptions): void;
+    refresh(): void;
+    refreshHard(): void;
+  };
+
+  export default AOS;
 }
