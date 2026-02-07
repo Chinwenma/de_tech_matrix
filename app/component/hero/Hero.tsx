@@ -15,17 +15,17 @@ const Hero: React.FC = () => {
           Hello
         </p>
 
-        <h1 className="text-4xl md:text-5xl font-semibold tracking-tight mb-4">
+        <h1 className="text-2xl md:text-5xl font-semibold tracking-tight mb-4">
           I&apos;m a Web Developer
         </h1>
 
-        <p className="leading-relaxed mb-8">
-          I specialize in creating responsive and dynamic web applications using
-          modern technologies.
+        <p className="leading-relaxed tracking-tight md:tracking-wider mb-8 text-justify">
+          Full-Stack Developer with hands-on experience building scalable web and mobile applications using React, Next.js, Node.js, and MongoDB. Passionate about creating efficient and user-friendly solutions to real-world problems.
         </p>
 
         <Link
           href="/CV.pdf"
+          // target="_blank"
           download
           className="inline-flex items-center justify-center px-7 py-3 rounded-full bg-[#8490ff] text-white font-medium hover:bg-gradient-to-br from-purple-600 to-blue-500 transition-all duration-300"
         >
