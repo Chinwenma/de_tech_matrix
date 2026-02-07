@@ -12,13 +12,28 @@ const techStack = [
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
   },
   {
+  name: "Tailwind",
+  src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+}
+
+,
+  {
     name: "JavaScript",
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+  },
+  {
+    name: "TypeScript",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",     
   },
   {
     name: "React",
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
   },
+  {
+  name: "Expo",
+  src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/expo/expo-original.svg",
+}
+,
   {
     name: "Next.js",
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
@@ -28,9 +43,31 @@ const techStack = [
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
   },
   {
+    name: "MongoDB",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg", 
+  },
+  {
+    name: "Express.js",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg", 
+  },
+
+  {
+    name: "postgreSQL",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg", 
+  },
+  {
     name: "Figma",
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
   },
+
+  {
+    name: "Git",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+  },
+  {
+    name: "GitHub",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg", 
+  }
 ];
 
 const AboutSection = () => {
@@ -71,7 +108,7 @@ const AboutSection = () => {
       </div>
 
       <div className="max-w-6xl mx-auto px-4 text-center" data-aos="zoom-in">
-        <h2 className="text-3xl font-bold mb-6">Tech Stack</h2>
+        <h2 className="text-3xl font-bold mb-6">Tech Stack & Tools</h2>
         <div className="flex flex-wrap justify-center items-center gap-6">
           {techStack.map((tech) => (
             <div
